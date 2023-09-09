@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent sibling combinator(+)</title>
+    <style>
+        p:first-of-type+p {
+            color: red;
+            font-size: 25px;
+        }
+
+        #p5+P {
+            color: brown;
+            text-decoration: overline;
+        }
+
+        #p8+h2 {
+            color: goldenrod;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        p+h2 {
+            /* for a paragraph p , adjacent h2 siblings are there . apply to that */
+            color: blue;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <h2>Header 1</h2>
+        <h2>Header 2</h2>
+    </div>
+    <div>
+        <p id="p5">Paragraph 5</p>
+        <p id="p6">Paragraph 6</p>
+        <p id="p7">Paragraph 7</p>
+        <p id="p8">Paragraph 8</p>
+        <h2>Header 3</h2>
+        <h2>Header 4</h2>
+    </div>
+</body>
+
+</html>

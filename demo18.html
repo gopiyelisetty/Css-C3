@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Transforms addded in css3
+    for transforms the value is function, we can call 4 functions on Transforms.
+they are:
+1.rotate
+2.scale
+3.translate
+4.skew -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css:Transforms</title>
+    <style>
+        h1 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            margin: 10px;
+        }
+
+        .myclass1 {
+            transform: rotate(-45deg);
+            /* -webkit-transform: rotate(45deg); */
+        }
+
+        .myclass2 {
+            transform: scale(5, 5) translate(100px, 10px) rotate(-25deg);
+        }
+
+        .myclass3 {
+            transform: skew(45deg, 10deg) translate(400px, 200px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="myclass1">Hello Guys</h1> <br> <br> <br>
+    <h1 class="myclass2">Hello Guys</h1> <br> <br> <br>
+    <h1 class="myclass3">Hello Guys</h1> <br> <br> <br>
+</body>
+
+</html>

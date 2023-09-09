@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        a:active {
+            color: blue;
+        }
+
+        a:visited {
+            color: gold;
+        }
+
+        a:hover {
+            color: darkorange;
+        }
+
+        body,
+        input {
+            font-size: 25px;
+        }
+
+        p:first-child {
+            color: blueviolet;
+        }
+
+        p:last-child {
+            color: teal;
+        }
+
+        /*
+        p:nth-child(odd) {
+            color: aqua;
+        }
+
+        p:nth-child(even) {
+            color: red;
+        }
+        */
+        p:nth-child(3) {
+            color: red;
+        }
+
+        p::first-letter {
+            color: lime
+        }
+
+        p::first-line {
+            color: goldenrod;
+        }
+
+        input:focus {
+            background-color: aquamarine;
+            font-size: 35px;
+        }
+
+        input:required {
+            color: cadetblue;
+        }
+
+        input:optional {
+            color: coral;
+        }
+
+        input::placeholder {
+            color: darkorchid
+        }
+
+        /* 
+        .my-class::first-line {
+            color: brown;
+            font-size: 30px;
+            font-weight: bold;
+        } */
+        #my-id::first-line {
+            color: deeppink;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form autocomplete="off">
+        firstname:<input type="text" name="fname" autofocus> <br>
+        lastname:<input type="text" name="lname"><br>
+        EmailID:<input type="text" name="email" required> <br>
+        Phone No:<input type="text" name="phone"> <br>
+        City:<input type="text" name="city" placeholder="banglore"> <br>
+    </form>
+    <div>
+        <p>Java Training</p>
+        <p>Python Training</p>
+        <p>MongoDB Trianing</p>
+        <p>React Training</p>
+        <p>Angular Training</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur atque aspernatur tenetur. Nisi
+            inventore atque mollitia eaque, tempora, blanditiis provident eveniet magni odio repellat dolorem veritatis,
+            cumque maxime officiis alias!</p>
+    </div>
+
+
+    <div class="my-class" id="my-id">
+        Anyone Who has Passion about Teaching and having in-depth.
+        Anyone Who has Passion about Teaching and having in-depth.
+        Anyone Who has Passion about Teaching and having in-depth.
+        Anyone Who has Passion about Teaching and having in-depth.
+        Anyone Who has Passion about Teaching and having in-depth.
+        Anyone Who has Passion about Teaching and having in-depth.
+
+
+
+    </div>
+
+    <br>
+
+    <div>
+        <a href="https://www.google.com/" target="_blank"> google page</a> <br>
+        <a href="https://www.expensify.com/">Expensify</a> <br>
+        <a href="https://trends.google.com/trends/">Google Trends</a> <br>
+        <a href="https://www.paypal.com/uk/home">Paypal</a> <br>
+        <a href="https://stackoverflow.com/">stackoverflow</a> <br>
+        <a href="demo3.html">Demo3</a>
+    </div>
+
+</body>
+
+</html>

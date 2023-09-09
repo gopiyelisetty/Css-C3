@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css: Inheritance</title>
+    <style>
+        /* embedded css */
+        div {
+            color: red;
+            border: 2px solid green;
+        }
+
+        p:first-child,
+        p:nth-child(3) {
+            border: inherit;
+        }
+
+        p:last-child {
+            color: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- some of the parent properties will inheritance to child,some not
+        like
+            1.parent border property not inherited by default
+            2.Parent color property is inherited by default -->
+        Hello guys how are you
+        <p>Paragraph 1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+        <p>paragraph 4</p>
+    </div>
+</body>
+
+</html>

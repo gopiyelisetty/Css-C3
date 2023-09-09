@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            margin: 20px;
+            animation: color-animation 6s 3, move-animation 6s, 3;
+        }
+
+        @keyframes color-animation {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: goldenrod;
+            }
+
+            75% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        @keyframes move-animation {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(100px, 0);
+            }
+
+            50% {
+                transform: translate(100px, 100px);
+            }
+
+            75% {
+                transform: translate(0, 100px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello Guys</div>
+</body>
+
+</html>
